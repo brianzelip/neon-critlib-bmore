@@ -1,0 +1,58 @@
+
+@mixin content($color, $id) {
+
+  $colorNeon: $color;
+  $colorLightNeon: lighten($colorNeon, 10%);
+  $shadowColor: adjust-hue($colorNeon, -30);
+
+  animation: neon2-#{$id} 3s infinite;
+
+  @keyframes neon2-#{$id} {
+    0% {
+      color: $colorNeon;
+      text-shadow: 0 0 10px $colorNeon, 1px 1px $colorLightNeon, 0 0 280px $shadowColor;
+    }
+    80% {
+      color: $colorNeon;
+      text-shadow: 0 0 10px $colorNeon, 1px 1px $colorLightNeon, 0 0 280px $shadowColor;
+    }
+    81% {
+      color: #222;
+      text-shadow: 0 0 10px #000, 1px 1px rgb(99, 74, 82), -2px 0px 4px #29121A;
+    }
+    94% {
+      color: #222;
+      text-shadow: 0 0 10px #000, 1px 1px rgb(99, 74, 82), -2px 0px 4px #29121A;
+    }
+    95% {
+      color: $colorNeon;
+      text-shadow: 0 0 10px $colorNeon, 1px 1px $colorLightNeon, 0 0 280px $shadowColor;
+    }
+    96% {
+      color: #222;
+      text-shadow: 0 0 10px #000, 1px 1px rgb(99, 74, 82), -2px 0px 4px #29121A;
+    }
+    97% {
+      color: $colorNeon;
+      text-shadow: 0 0 10px $colorNeon, 1px 1px $colorLightNeon, 0 0 280px $shadowColor;
+    }
+    98% {
+      color: $colorNeon;
+      text-shadow: 0 0 10px $colorNeon, 1px 1px $colorLightNeon, 0 0 280px $shadowColor;
+    }
+    99% {
+      color: #222;
+      text-shadow: 0 0 10px #000, 1px 1px rgb(99, 74, 82), -2px 0px 4px #29121A;
+    }
+    100% {
+      color: $colorNeon;
+      text-shadow: 0 0 10px $colorNeon, 1px 1px $colorLightNeon, 0 0 280px $shadowColor;
+    }
+  }
+
+}
+
+#red { @include content(#E91E63, 1); }
+#purple { @include content(#C32AFF, 2); }
+#blue { @include content(#03A9F4, 3); }
+#green { @include content(#8BC34A, 4); }
