@@ -12,55 +12,64 @@
     <meta name="author" content="Brian Zelip">
     <meta name="keywords" content="">
     <style>
-      @keyframes neonspark  {
-      0% { text-shadow: none; }
-      30% { text-shadow: 0 0 30px rgba(255,0,84,0.6); }
-      60% {
-        text-shadow: 0 0 30px rgba(255,0,84,0.6),
-        0 0 60px rgba(255,0,84,0.4);
-        }
-      80% { text-shadow: none; }
-      100% {
-          text-shadow: 0 0 30px rgba(255,0,84,0.6),
-            0 0 60px rgba(255,0,84,0.4),
-            0 0 100px rgba(255,0,84,0.2),
-            0 0 90px rgba(255,0,84,0.1);
-        }
-      }
-      .neon80s {
-        color: rgba(255,200,200,0.8);
-        font-weight: 100;
-        font-family: 'Dancing Script', cursive;
-        color: #fee;
-        font-size: 4rem;
-        animation: neonspark 1s 3s forwards;
-        text-shadow:
-          0 0 20px rgba(255,0,84,0.6),
-          0 0 40px rgba(255,0,84,0.4),
-          0 0 60px rgba(255,0,84,0.2),
-          0 0 80px rgba(255,0,84,0.1);
-      }
-      .neon80s span { animation: neonspark 4s 3s infinite;  }
-      /*
-        neon animation bibliography:
-          - https://codepen.io/dudleystorey/pen/xJkhG
-          - http://codepen.io/FelixRilling/pen/qzfoc
-          - https://duckduckgo.com/?q=neon+css&t=ffab&ia=web
-      */
+
       body,
       .vh100 { min-height: 100vh; }
       .justify-center { justify-content: center; }
-      .align-center { align-items: center; }
+      .align-content-center { align-content: center; }
+      .script { font-family: "Dancing Script", cursive; }
+      .h0 { font-size: 4rem; }
+
     </style>
   </head>
 
-  <body class="bg-black flex justify-center align-center">
+  <body class="bg-black flex flex-wrap justify-center align-content-center">
 
-    <a class="px2 neon80s white" href="">#critlib17</a>
-    <span class="px2 neon80s white" >baltimore</span>
-    <a class="px2 neon80s white" href="">#critlib17</a>
-    <span class="px2 neon80s white" >baltimore</span>
+    <a class="px2 script white h0" href="">#critlib</a>
+    <span class="px2 script white h0" >baltimore</span>
+    <a class="px2 script white h0" href="">#critlib</a>
+    <span class="px2 script white h0" >baltimore</span>
 
   </body>
+
+  <!-- BAR neonspark CSS
+    @keyframes neonspark  {
+    0% { text-shadow: none; }
+    30% { text-shadow: 0 0 30px rgba(255,0,84,0.6); }
+    60% {
+      text-shadow: 0 0 30px rgba(255,0,84,0.6),
+      0 0 60px rgba(255,0,84,0.4);
+      }
+    80% { text-shadow: none; }
+    100% {
+        text-shadow: 0 0 30px rgba(255,0,84,0.6),
+          0 0 60px rgba(255,0,84,0.4),
+          0 0 100px rgba(255,0,84,0.2),
+          0 0 90px rgba(255,0,84,0.1);
+      }
+    }
+    .neon80s {
+      color: rgba(255,200,200,0.8);
+      font-weight: 100;
+      font-family: 'Dancing Script', cursive;
+      color: #fee;
+      font-size: 4rem;
+      animation: neonspark 1s 3s forwards;
+      text-shadow:
+        0 0 20px rgba(255,0,84,0.6),
+        0 0 40px rgba(255,0,84,0.4),
+        0 0 60px rgba(255,0,84,0.2),
+        0 0 80px rgba(255,0,84,0.1);
+    }
+  -->
+
+  <!--REFERENCES>
+
+    neon animation bibliography:
+      - https://codepen.io/dudleystorey/pen/xJkhG
+      - http://codepen.io/FelixRilling/pen/qzfoc
+      - https://duckduckgo.com/?q=neon+css&t=ffab&ia=web
+
+  </REFERENCES-->
 
 </html>
