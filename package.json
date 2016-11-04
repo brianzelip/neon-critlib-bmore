@@ -1,0 +1,31 @@
+{
+  "name": "neon-critlib-bmore",
+  "version": "1.0.0",
+  "description": "Remix of @CityThatReads' tweet, https://twitter.com/CityThatReads/status/793965083315552256.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prefix": "postcss -u autoprefixer --autoprefixer.browsers '> 5%' -r neon.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brianzelip/neon-critlib-bmore.git"
+  },
+  "keywords": [
+    "neon",
+    "critlib17",
+    "Baltimore",
+    "CSS"
+  ],
+  "author": "@bzelip",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/brianzelip/neon-critlib-bmore/issues"
+  },
+  "homepage": "https://github.com/brianzelip/neon-critlib-bmore#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.5.1",
+    "postcss": "^5.2.5",
+    "postcss-cli": "^2.6.0"
+  }
+}
